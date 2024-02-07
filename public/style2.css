@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Palanquin', sans-serif;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(35, 36, 37, 0.2), rgb(6 9 20 / 40%)), url(/images/music192.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    background-size: 100%;
+}
+
+.header h1 {
+    color: white;
+    font-size: 80px;
+}
+
+.header p {
+    color: white;
+    font-size: 20px;
+    margin-top: 18px;
+    letter-spacing: 6px;
+}
+
+/* .main {
+    margin: 40px 100px;
+} */
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.about_sec {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.about_sec img {
+    height: auto;
+    width: 430px;
+    border-radius: 300px;
+}
+
+.about_text h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+
+}
+
+.about_text {
+    color: white;
+    margin: 20px 40px 20px;
+}
+
+.about_text p {
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+
+.back_btn {
+    text-align: center;
+    height: 10vh;
+
+    background: #191919;
+
+}
+
+.back_btn a {
+
+
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.back_btn a:hover {
+    background: #fb4f43;
+    color: white;
+}
+
+@media(max-width: 700px) {
+    .header {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 33px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .about_section {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .ele_col {
+        flex-basis: 31%;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        text-align: left;
+        transition: .8s;
+    }
+}

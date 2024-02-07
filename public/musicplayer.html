@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musicplayer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="data.js"></script>
+
+    <title>ST STUDIO Music Player </title>
+</head>
+
+<body>
+    <!-- Firebase Connectivity code -->
+   <!-- Include the Firebase v9 modular SDK -->
+<script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+
+<!-- Your script that uses Firebase -->
+<script type="module" src="script.mjs"></script>
+
+
+    <audio src="" id="audio"></audio>
+    <!-- CWH code here  -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="/public/images/ST STUDIO Logo.jpg" 
+                alt="Logo"> ST STUDIO MUSIC PLAYER</li>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="About.html">About</a> </li>
+        </ul>
+    </nav>
+    <!-- Playlist and Player COntainer  -->
+    <section class="first-box">
+        <div class="container">
+            <div class="player">
+                <div class="music-player">
+                    <marquee behavior="" direction="">
+                        <h1 class="music-name">Song Name</h1>
+                    </marquee>
+                    <p class="artist-name">Artist Name</p>
+
+                    <div class="disk">
+                    </div>
+                    <div class="song-slider">
+                        <input type="range" value="0" class="seek-bar">
+                        <span class="current-time">00:00</span>
+                        <span class="song-duration">00:00</span>
+                    </div>
+                    <div class="controls">
+
+
+                        <button class="btn backward-btn">
+                            <img src="images/pre.png" alt="Back song button">
+                        </button>
+
+                        <button class="play-btn pause">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button class="btn forward-btn">
+                            <img src="images/nxt.png" alt="Next song button">
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="music_list">
+                <h1>Our Best Songs in MP3 Versions</h1>
+                <ul class="playlist">
+                    <!-- <li>
+                        <div class="audio-img">
+                            <img src="/public/images/InDino.png" alt="Song 1">
+                        </div>
+                        <marquee behavior="" direction="">
+                            <h3>Song Name 1</h3>
+                        </marquee>
+                        <button class="play-song-btn">Play</button>
+                    </li>
+                    <li>
+                        <div class="audio-img">
+                            <img src="/public/images/RamChoupai.png" alt="Song 1">
+                        </div>
+                        <marquee behavior="" direction="" >
+                            <h3>Song Name 1</h3>
+                        </marquee>
+                        <button class="play-song-btn">Play</button>
+                    </li> -->
+                   
+
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>
