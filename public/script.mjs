@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backwardBtn = document.querySelector('.backward-btn');
     const ulTag = document.querySelector(".playlist");
 
+
     const firebaseConfig = {
         apiKey: "AIzaSyDd7R5GrCfpdn1a61Ox1ItgBI0H-brBCu0",
         authDomain: "st-studio-films-and-music.firebaseapp.com",
@@ -57,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
         disk.classList.remove('play');
     });
 
-    const setMusic = (i, songs) => {
+    function setMusic(i, songs) {
         seekBar.value = 0;
-        let song = songs[i];
         currentMusic = i;
+        const song = songs[i];
         music.src = song.path;
         songName.innerHTML = song.name;
         artistName.innerHTML = song.artist;
@@ -71,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         currentTime.innerHTML = '00:00';
-    };
+    }
 
-    const formatTime = (time) => {
+    function formatTime(time) {
         let min = Math.floor(time / 60);
         if (min < 10) {
             min = `0${min}`;
@@ -83,9 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
             sec = `0${sec}`;
         }
         return `${min}:${sec}`;
-    };
+    }
 
-    const playMusic = () => {
+    function playMusic() {
         var playPromise = music.play();
 
         if (playPromise !== undefined) {
@@ -95,11 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Autoplay was prevented
             });
         }
-    };
 
-    const pauseMusic = () => {
+            // Event listener for when the current song ends
+            music.addEventListener('ended', () => {
+            // Play the next song
+            forwardBtn.click();
+    });
+    }
+
+    function pauseMusic() {
         music.pause();
-    };
+    }
 
     forwardBtn.addEventListener('click', () => {
         onValue(songRef, (snapshot) => {
@@ -127,47 +134,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    seekBar.addEventListener('change', () => {
+        music.currentTime = seekBar.value;
+    });
+
+    music.addEventListener('timeupdate', () => {
+        seekBar.value = music.currentTime;
+        currentTime.innerHTML = formatTime(music.currentTime);
+    });
+
     onValue(songRef, (snapshot) => {
         const songs = snapshot.val();
 
-        let currentSongIndex = null;
+        ulTag.innerHTML = ''; // Clear the playlist before updating
 
         for (let i = 0; i < songs.length; i++) {
             const song = songs[i];
             const liTag = document.createElement("li");
-            liTag.setAttribute("data-li-index", i + 1);
+            liTag.setAttribute("data-li-index", i);
             liTag.setAttribute("data-song-src", song.path);
 
             liTag.innerHTML = `
                 <div class="audio-img">
                     <img src="${song.cover}" alt="Song ${i + 1}">
                 </div>
-                <marquee behavior="" direction="">
+                <marquee behavior="" direction=""
+                animation="marquee 90s linear infinite"
+                width="100%"
+                white-space="nowrap"
+                overflow="hidden">
                     <h3>${song.name}</h3>
                 </marquee>
                 <button class="play-song-btn">Play</button>`;
 
             ulTag.appendChild(liTag);
 
-            const playBtn = liTag.querySelector(".play-song-btn");
-            playBtn.addEventListener("click", () => {
-                const songPath = liTag.getAttribute("data-song-src");
-                playsong(songPath, i);
+            liTag.querySelector(".play-song-btn").addEventListener("click", () => {
+                setMusic(i, songs);
+                playMusic();
             });
         }
     });
 
-    function playsong(songPath, songIndex) {
-        music.src = songPath;
-        playMusic();
-        currentSongIndex = songIndex;
-
-        const song = songs[currentSongIndex];
-        songName.textContent = song.name;
-        artistName.textContent = song.artist;
-
-        seekBar.value = 0;
-        currentTime.textContent = '00:00';
-        musicDuration.textContent = formatTime(music.duration);
-    }
 });

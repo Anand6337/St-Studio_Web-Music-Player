@@ -1,13 +1,13 @@
-[debug] [2023-08-28T19:34:44.132Z] ----------------------------------------------------------------------
-[debug] [2023-08-28T19:34:44.135Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2023-08-28T19:34:44.135Z] CLI Version:   12.5.2
-[debug] [2023-08-28T19:34:44.136Z] Platform:      win32
-[debug] [2023-08-28T19:34:44.136Z] Node Version:  v20.3.0
-[debug] [2023-08-28T19:34:44.136Z] Time:          Tue Aug 29 2023 01:04:44 GMT+0530 (India Standard Time)
-[debug] [2023-08-28T19:34:44.136Z] ----------------------------------------------------------------------
+[debug] [2024-02-08T09:13:50.888Z] ----------------------------------------------------------------------
+[debug] [2024-02-08T09:13:50.891Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-08T09:13:50.892Z] CLI Version:   13.2.1
+[debug] [2024-02-08T09:13:50.892Z] Platform:      win32
+[debug] [2024-02-08T09:13:50.892Z] Node Version:  v20.3.0
+[debug] [2024-02-08T09:13:50.892Z] Time:          Thu Feb 08 2024 14:43:50 GMT+0530 (India Standard Time)
+[debug] [2024-02-08T09:13:50.892Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-08-28T19:34:44.146Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-08-28T19:34:44.147Z] > authorizing via signed-in user (salokiyanand7455@gmail.com)
+[debug] [2024-02-08T09:13:50.899Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-08T09:13:50.899Z] > authorizing via signed-in user (salokiyanand7455@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -17,7 +17,7 @@
 
 You're about to initialize a Firebase project in this directory:
 
-  D:\MPCS\MultiPage Responsive Website
+  D:\Recent Project\St_Studio_Music_Player
 
 [info] 
 === Project Setup
@@ -26,155 +26,18 @@ You're about to initialize a Firebase project in this directory:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2023-08-28T19:35:12.511Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2023-08-28T19:35:14.274Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2023-08-28T19:35:14.275Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project st-studio-films-and-music (ST STUDIO FILMS AND MUSIC) 
-[info] 
-=== Database Setup
-[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
-[debug] [2023-08-28T19:35:19.124Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com [none]
-[debug] [2023-08-28T19:35:19.124Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/st-studio-films-and-music
-[debug] [2023-08-28T19:35:21.677Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com 200
-[debug] [2023-08-28T19:35:21.678Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com [omitted]
-[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
-[debug] [2023-08-28T19:35:21.680Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com:enable [none]
-[debug] [2023-08-28T19:35:21.680Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/st-studio-films-and-music
-[debug] [2023-08-28T19:35:22.645Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com:enable 200
-[debug] [2023-08-28T19:35:22.645Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com:enable [omitted]
-[debug] [2023-08-28T19:35:32.660Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com [none]
-[debug] [2023-08-28T19:35:32.661Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/st-studio-films-and-music
-[debug] [2023-08-28T19:35:35.046Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com 200
-[debug] [2023-08-28T19:35:35.046Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/st-studio-films-and-music/services/firebasedatabase.googleapis.com [omitted]
-[info] +  database: required API firebasedatabase.googleapis.com is enabled 
-[info] 
-[debug] [2023-08-28T19:35:35.056Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/st-studio-films-and-music [none]
-[debug] [2023-08-28T19:35:36.157Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/st-studio-films-and-music 200
-[debug] [2023-08-28T19:35:36.157Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/st-studio-films-and-music {"projectId":"st-studio-films-and-music","projectNumber":"940676956958","displayName":"ST STUDIO FILMS AND MUSIC","name":"projects/st-studio-films-and-music","resources":{"hostingSite":"st-studio-films-and-music"},"state":"ACTIVE","etag":"1_041a6521-58f4-45cc-986a-f7bdbe1ffb79"}
-[debug] [2023-08-28T19:35:50.883Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances databaseId=st-studio-films-and-music-default-rtdb&validateOnly=true
-[debug] [2023-08-28T19:35:50.883Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances {"type":"default_database"}
-[debug] [2023-08-28T19:35:53.539Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances 200
-[debug] [2023-08-28T19:35:53.540Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances {"name":"projects/940676956958/locations/asia-southeast1/instances/st-studio-films-and-music-default-rtdb","project":"projects/940676956958","databaseUrl":"https://st-studio-films-and-music-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
-[debug] [2023-08-28T19:35:53.542Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances databaseId=st-studio-films-and-music-default-rtdb
-[debug] [2023-08-28T19:35:53.542Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances {"type":"default_database"}
-[debug] [2023-08-28T19:35:54.293Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances 200
-[debug] [2023-08-28T19:35:54.293Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/st-studio-films-and-music/locations/asia-southeast1/instances {"name":"projects/940676956958/locations/asia-southeast1/instances/st-studio-films-and-music-default-rtdb","project":"projects/940676956958","databaseUrl":"https://st-studio-films-and-music-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
-[info] 
-[info] Firebase Realtime Database Security Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[debug] [2023-08-28T19:36:02.533Z] >>> [apiv2][query] GET https://st-studio-films-and-music-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
-[debug] [2023-08-28T19:36:04.639Z] <<< [apiv2][status] GET https://st-studio-films-and-music-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
-[debug] [2023-08-28T19:36:04.639Z] <<< [apiv2][body] GET https://st-studio-films-and-music-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
-[info] +  Database Rules for st-studio-films-and-music-default-rtdb have been written to database.rules.json. 
-[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
-[info] firebase deploy.
-[info] 
-=== Hosting Setup
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[debug] [2023-08-28T19:36:33.704Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
-[debug] [2023-08-28T19:36:34.157Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
-[debug] [2023-08-28T19:36:34.158Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.0","browserURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.memory.js"}}
-[info] +  Wrote public/index.html 
-[info] 
-[info] i  Detected a .git folder at D:\MPCS\MultiPage Responsive Website 
-[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
-[info] 
-[info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=70795054&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
-[info] 
-[info] Waiting for authentication...
-[debug] [2023-08-28T19:36:50.307Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
-[debug] [2023-08-28T19:36:50.308Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
-[debug] [2023-08-28T19:36:51.734Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
-[debug] [2023-08-28T19:36:51.734Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
-[debug] [2023-08-28T19:36:51.748Z] >>> [apiv2][query] GET https://api.github.com/user [none]
-[debug] [2023-08-28T19:36:52.726Z] <<< [apiv2][status] GET https://api.github.com/user 200
-[debug] [2023-08-28T19:36:52.726Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Anand6337","id":107881311,"node_id":"U_kgDOBm4jXw","avatar_url":"https://avatars.githubusercontent.com/u/107881311?v=4","gravatar_id":"","url":"https://api.github.com/users/Anand6337","html_url":"https://github.com/Anand6337","followers_url":"https://api.github.com/users/Anand6337/followers","following_url":"https://api.github.com/users/Anand6337/following{/other_user}","gists_url":"https://api.github.com/users/Anand6337/gists{/gist_id}","starred_url":"https://api.github.com/users/Anand6337/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Anand6337/subscriptions","organizations_url":"https://api.github.com/users/Anand6337/orgs","repos_url":"https://api.github.com/users/Anand6337/repos","events_url":"https://api.github.com/users/Anand6337/events{/privacy}","received_events_url":"https://api.github.com/users/Anand6337/received_events","type":"User","site_admin":false,"name":"Anand Salokiya","company":null,"blog":"","location":"Indore (M.P)","email":null,"hireable":null,"bio":"Hello, I'm Anand Salokiya currently pursuing B.Tech (CSBS) from SVVIIT - INDORE, Currently, I am learning Android Development with the flutter framework ","twitter_username":null,"public_repos":10,"public_gists":0,"followers":0,"following":0,"created_at":"2022-06-20T17:41:25Z","updated_at":"2023-08-28T19:36:44Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":39141,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
-[info] 
-[info] +  Success! Logged into GitHub as Anand6337 
-[info] 
-[debug] [2023-08-28T19:37:03.715Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
-[debug] [2023-08-28T19:37:04.999Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
-[debug] [2023-08-28T19:37:04.999Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[info] 
-[info] 
-[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
-[info] 
-[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
-[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
-[info] 
-[debug] [2023-08-28T19:39:17.296Z] >>> [apiv2][query] GET https://api.github.com/repos/cls/actions/secrets/public-key type=owner
-[debug] [2023-08-28T19:39:18.463Z] <<< [apiv2][status] GET https://api.github.com/repos/cls/actions/secrets/public-key 404
-[debug] [2023-08-28T19:39:18.463Z] <<< [apiv2][body] GET https://api.github.com/repos/cls/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[info] 
-[info] 
-[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
-[info] 
-[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
-[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
-[info] 
-[debug] [2023-08-28T19:39:18.722Z] >>> [apiv2][query] GET https://api.github.com/repos/cls/actions/secrets/public-key type=owner
-[debug] [2023-08-28T19:39:19.195Z] <<< [apiv2][status] GET https://api.github.com/repos/cls/actions/secrets/public-key 404
-[debug] [2023-08-28T19:39:19.195Z] <<< [apiv2][body] GET https://api.github.com/repos/cls/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-[info] 
-[info] 
-[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
-[info] 
-[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
-[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
-[info] 
-[debug] [2023-08-28T19:40:46.281Z] ----------------------------------------------------------------------
-[debug] [2023-08-28T19:40:46.296Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2023-08-28T19:40:46.297Z] CLI Version:   12.5.2
-[debug] [2023-08-28T19:40:46.297Z] Platform:      win32
-[debug] [2023-08-28T19:40:46.298Z] Node Version:  v20.3.0
-[debug] [2023-08-28T19:40:46.298Z] Time:          Tue Aug 29 2023 01:10:46 GMT+0530 (India Standard Time)
-[debug] [2023-08-28T19:40:46.298Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2023-08-28T19:40:46.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-08-28T19:40:46.316Z] > authorizing via signed-in user (salokiyanand7455@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  D:\MPCS\MultiPage Responsive Website
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2023-08-28T19:40:58.458Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2023-08-28T19:40:59.900Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2023-08-28T19:40:59.901Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project st-studio-films-and-music (ST STUDIO FILMS AND MUSIC) 
-[info] 
-=== Hosting Setup
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[info] +  Wrote public/404.html 
-[debug] [2023-08-28T19:43:13.913Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
-[debug] [2023-08-28T19:43:14.348Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
-[debug] [2023-08-28T19:43:14.348Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.0","browserURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.0/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.memory.js"}}
-[info] +  Wrote public/index.html 
-[info] 
-[info] i  Writing configuration info to firebase.json... 
-[info] i  Writing project information to .firebaserc... 
-[info] i  Writing gitignore file to .gitignore... 
-[info] 
-[info] +  Firebase initialization complete! 
+[debug] [2024-02-08T09:14:14.717Z] > refreshing access token with scopes: []
+[debug] [2024-02-08T09:14:14.719Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-08T09:14:14.719Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-08T09:14:15.038Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-02-08T09:14:15.038Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-08T09:14:15.039Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-08T09:14:15.337Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2024-02-08T09:14:15.337Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-02-08T09:14:15.339Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-02-08T09:14:15.623Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

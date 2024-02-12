@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "St_Studio_Music_Player",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

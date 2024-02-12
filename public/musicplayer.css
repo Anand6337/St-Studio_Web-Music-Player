@@ -11,8 +11,18 @@ body {
     font-family: 'Poppins', sans-serif;
 
 }
+
+@keyframes marquee_tag
+{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
 .marquee_tag {
-    color: #ff6055;
+
+     animation: marquee 90s linear infinite;
+      width: 100%;
+      white-space: nowrap; 
+      overflow: hidden;
 }
 /* For new Nav Bar */
 nav{
